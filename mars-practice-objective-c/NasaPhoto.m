@@ -31,4 +31,12 @@
   return self;
 }
 
+-(NSURL *)imageURL {
+  return self.imageURL;
+}
+
+-(NSDate *)createdData {
+  return self.created;
+}
+
 @end
