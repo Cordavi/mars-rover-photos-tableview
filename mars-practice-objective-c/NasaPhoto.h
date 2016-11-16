@@ -4,6 +4,6 @@
 @interface NasaPhoto : NSObject
 
 -(NSURL *)imageURL;
--(NSDate *)createdData;
+-(NSDate *)createdDate;
 
 @end

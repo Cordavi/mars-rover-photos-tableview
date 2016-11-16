@@ -35,7 +35,7 @@
   return self.imageURL;
 }
 
--(NSDate *)createdData {
+-(NSDate *)createdDate {
   return self.created;
 }
 
