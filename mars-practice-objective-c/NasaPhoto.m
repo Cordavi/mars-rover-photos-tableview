@@ -9,7 +9,7 @@
 
 @implementation NasaPhoto
 
-- (instancetype)initWithPhotoJson:(NSDictionary *)photosJson {
+-(instancetype)initWithPhotoJson:(NSDictionary *)photosJson {
   self = [super init];
   if (self) {
     NSString *imageURLString = [NSString stringWithFormat:@"%@", photosJson[@"img_src"]];

@@ -5,5 +5,6 @@
 
 -(NSURL *)imageURL;
 -(NSDate *)createdDate;
+-(instancetype)initWithPhotoJson:(NSDictionary *)photosJson;
 
 @end
