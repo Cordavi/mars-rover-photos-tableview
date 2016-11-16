@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D08892D1DDCC2B400B1A5FB /* NasaPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08892C1DDCC2B400B1A5FB /* NasaPhoto.m */; };
+		1D0889301DDCEABD00B1A5FB /* NasaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08892F1DDCEABD00B1A5FB /* NasaTableViewController.m */; };
 		1D9C11421DDBA07300D40193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C11411DDBA07300D40193 /* main.m */; };
 		1D9C11451DDBA07300D40193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C11441DDBA07300D40193 /* AppDelegate.m */; };
 		1D9C11481DDBA07300D40193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C11471DDBA07300D40193 /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		1D08892B1DDCC2B400B1A5FB /* NasaPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NasaPhoto.h; sourceTree = "<group>"; };
 		1D08892C1DDCC2B400B1A5FB /* NasaPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NasaPhoto.m; sourceTree = "<group>"; };
+		1D08892E1DDCEABD00B1A5FB /* NasaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NasaTableViewController.h; sourceTree = "<group>"; };
+		1D08892F1DDCEABD00B1A5FB /* NasaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NasaTableViewController.m; sourceTree = "<group>"; };
 		1D9C113D1DDBA07300D40193 /* mars-practice-objective-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mars-practice-objective-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9C11411DDBA07300D40193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D9C11431DDBA07300D40193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				1D08892C1DDCC2B400B1A5FB /* NasaPhoto.m */,
 				1DCD34431DDCBCA50043D0F7 /* ContentManager.h */,
 				1DCD34441DDCBCA50043D0F7 /* ContentManager.m */,
+				1D08892E1DDCEABD00B1A5FB /* NasaTableViewController.h */,
+				1D08892F1DDCEABD00B1A5FB /* NasaTableViewController.m */,
 				1D9C11491DDBA07300D40193 /* Main.storyboard */,
 				1D9C114C1DDBA07300D40193 /* Assets.xcassets */,
 				1D9C114E1DDBA07300D40193 /* LaunchScreen.storyboard */,
@@ -299,6 +304,7 @@
 				1DCD34451DDCBCA50043D0F7 /* ContentManager.m in Sources */,
 				1D9C11451DDBA07300D40193 /* AppDelegate.m in Sources */,
 				1D9C11421DDBA07300D40193 /* main.m in Sources */,
+				1D0889301DDCEABD00B1A5FB /* NasaTableViewController.m in Sources */,
 				1D08892D1DDCC2B400B1A5FB /* NasaPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
