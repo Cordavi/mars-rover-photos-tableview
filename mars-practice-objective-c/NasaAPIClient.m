@@ -6,8 +6,8 @@ NSString *const keyPath = @"&api_key=";
 
 @implementation NasaAPIClient
 
--(void)fetchPhotosJSONWithCompletion:(void(^)(NSDictionary * _Nullable))completion {
- 
+-(void)fetchPhotosJsonWithCompletion:(void(^ _Nonnull)(NSDictionary * _Nullable))completion {
+  
   NSString *urlString = [NSString stringWithFormat:@"%@%@%@", baseURL, keyPath, [Keys clientID]];
   NSURL *url = [NSURL URLWithString:urlString];
   
@@ -29,8 +29,17 @@ NSString *const keyPath = @"&api_key=";
   [request resume];
 }
 
--(NSURLSession *)fetchImageAtURL:(NSURL *)url withCompletion:(void (^)(NSData *))completion {
+-(NSURLSessionDataTask * _Nonnull)fetchImageAtURL:(NSURL * _Nonnull)url withCompletion:(void(^ _Nonnull)(NSData * _Nullable))completion {
+  NSURLSessionDataTask *request = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    if (error || !data) {
+      completion(nil);
+    }
+    
+    completion(data);
+  }];
   
+  [request resume];
+  return request;
 }
 
 @end
