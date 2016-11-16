@@ -62,4 +62,5 @@ fastlane/test_output
 iOSInjectionProject/
 
 #Keys
-Keys
+Keys.h
+Keys.m
