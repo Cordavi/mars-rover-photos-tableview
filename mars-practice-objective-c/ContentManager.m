@@ -92,6 +92,10 @@
   return cellPhoto;
 }
 
+-(void)cancelNSURLSessionDataTaskForIndexPath:(NSIndexPath *)indexPath {
+  NSURLSessionDataTask *session = self.photosRequests[indexPath];
+  [session cancel];
+}
 
 @end
 
