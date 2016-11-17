@@ -13,7 +13,6 @@
 		1D0889301DDCEABD00B1A5FB /* NasaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08892F1DDCEABD00B1A5FB /* NasaTableViewController.m */; };
 		1D9C11421DDBA07300D40193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C11411DDBA07300D40193 /* main.m */; };
 		1D9C11451DDBA07300D40193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C11441DDBA07300D40193 /* AppDelegate.m */; };
-		1D9C11481DDBA07300D40193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C11471DDBA07300D40193 /* ViewController.m */; };
 		1D9C114B1DDBA07300D40193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9C11491DDBA07300D40193 /* Main.storyboard */; };
 		1D9C114D1DDBA07300D40193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9C114C1DDBA07300D40193 /* Assets.xcassets */; };
 		1D9C11501DDBA07300D40193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9C114E1DDBA07300D40193 /* LaunchScreen.storyboard */; };
@@ -53,8 +52,6 @@
 		1D9C11411DDBA07300D40193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D9C11431DDBA07300D40193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D9C11441DDBA07300D40193 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D9C11461DDBA07300D40193 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1D9C11471DDBA07300D40193 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1D9C114A1DDBA07300D40193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D9C114C1DDBA07300D40193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D9C114F1DDBA07300D40193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,8 +120,6 @@
 			children = (
 				1D9C11431DDBA07300D40193 /* AppDelegate.h */,
 				1D9C11441DDBA07300D40193 /* AppDelegate.m */,
-				1D9C11461DDBA07300D40193 /* ViewController.h */,
-				1D9C11471DDBA07300D40193 /* ViewController.m */,
 				1D9C11761DDBA22000D40193 /* Keys.h */,
 				1D9C11771DDBA22000D40193 /* Keys.m */,
 				1D9C11791DDBAA6600D40193 /* NasaAPIClient.h */,
@@ -307,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D9C11481DDBA07300D40193 /* ViewController.m in Sources */,
 				1D9C117B1DDBAA6600D40193 /* NasaAPIClient.m in Sources */,
 				1D038F251DDE2C9B004B8DAA /* NasaPhotoTableViewCell.m in Sources */,
 				1D9C11781DDBA22000D40193 /* Keys.m in Sources */,
