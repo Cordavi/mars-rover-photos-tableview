@@ -62,7 +62,26 @@
   }];
 }
 
-
+-(void)fetchImageForIndexPath:(NSIndexPath *)indexPath {
+  __weak ContentManager *weakSelf = self;
+  NSLog(@"%ld", (long)indexPath.row);
+  NasaPhoto *nasaData = self.photosJsonArray[indexPath.row];
+  if (!nasaData.imageURL) {
+    return;
+  }
+  
+  self.photosRequests[indexPath] = [self.apiClient fetchImageAtURL:nasaData.imageURL withCompletion:^(NSData * _Nullable completion) {
+    if (!completion) {
+      return;
+    }
+    
+    UIImage *photo = [UIImage imageWithData:completion];
+    if (!photo) {
+      return;
+    }
+    weakSelf.photosDictionary[indexPath] = photo;
+  }];
+}
 
 
 @end
