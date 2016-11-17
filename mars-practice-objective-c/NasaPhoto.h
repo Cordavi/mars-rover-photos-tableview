@@ -8,6 +8,6 @@
 @property (strong, nonatomic, readonly) NSURL *_Nonnull imageURL;
 @property (strong, nonatomic, readonly) NSDate *_Nullable created;
 
--(instancetype)initWithPhotoJson:(NSDictionary *)photosJson;
+-(instancetype _Nonnull)initWithPhotoJson:(NSDictionary *_Nonnull)photosJson;
 
 @end
