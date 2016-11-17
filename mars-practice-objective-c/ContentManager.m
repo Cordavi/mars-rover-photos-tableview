@@ -18,7 +18,9 @@
   self = [super init];
   if (self) {
     _apiClient = [[NasaAPIClient alloc] init];
-    _photosJsonArray = [[NSMutableArray alloc] init];
+    _photosJsonArray = [@[] mutableCopy];
+    _photosDictionary = [@{} mutableCopy];
+    _photosRequests = [@{} mutableCopy];
   }
   return self;
 }
@@ -40,7 +42,7 @@
       return;
     }
     
-//    NSError *jsonError;
+    //    NSError *jsonError;
     NSArray *photosJsonArray = completion[@"photos"];
     if (!photosJsonArray) {
       return;
@@ -59,6 +61,8 @@
     
   }];
 }
+
+
 
 
 @end
