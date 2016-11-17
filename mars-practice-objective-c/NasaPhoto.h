@@ -5,6 +5,8 @@
 
 -(NSURL *)imageURL;
 -(NSDate *)createdDate;
+-(NSString *)roverName;
+-(NSString *)cameraName;
 -(instancetype)initWithPhotoJson:(NSDictionary *)photosJson;
 
 @end
