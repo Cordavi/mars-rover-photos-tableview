@@ -64,7 +64,6 @@
 
 -(void)fetchImageForIndexPath:(NSIndexPath *)indexPath {
   __weak ContentManager *weakSelf = self;
-  NSLog(@"%ld", (long)indexPath.row);
   NasaPhoto *nasaData = self.photosJsonArray[indexPath.row];
   if (!nasaData.imageURL) {
     return;
@@ -86,7 +85,6 @@
 -(UIImage *)imageForIndexPath:(NSIndexPath *)indexPath {
   UIImage *cellPhoto = self.photosDictionary[indexPath];
   if (!cellPhoto) {
-    NSLog(@"%ld", (long)indexPath.row);
     [self fetchImageForIndexPath:indexPath];
   }
   return cellPhoto;
@@ -98,6 +96,3 @@
 }
 
 @end
-
-
-//fetch image data
