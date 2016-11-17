@@ -79,6 +79,11 @@
       return;
     }
     weakSelf.photosDictionary[indexPath] = photo;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [delegate imageDidLoadWithIndexPath:indexPath];
+    });
+    
   }];
 }
 
@@ -86,6 +91,7 @@
   UIImage *cellPhoto = self.photosDictionary[indexPath];
   if (!cellPhoto) {
     [self fetchImageForIndexPath:indexPath];
+    return [UIImage imageNamed:@"placeholder"];
   }
   return cellPhoto;
 }
