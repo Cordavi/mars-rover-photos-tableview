@@ -83,6 +83,15 @@
   }];
 }
 
+-(UIImage *)imageForIndexPath:(NSIndexPath *)indexPath {
+  UIImage *cellPhoto = self.photosDictionary[indexPath];
+  if (!cellPhoto) {
+    NSLog(@"%ld", (long)indexPath.row);
+    [self fetchImageForIndexPath:indexPath];
+  }
+  return cellPhoto;
+}
+
 
 @end
 
