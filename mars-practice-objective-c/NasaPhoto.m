@@ -2,10 +2,10 @@
 
 @interface NasaPhoto()
 
-@property (strong, nonatomic) NSString *_Nullable camera;
-@property (strong, nonatomic) NSString *_Nullable rover;
-@property (strong, nonatomic) NSURL *_Nonnull imageURL;
-@property (strong, nonatomic) NSDate *_Nullable created;
+@property (strong, nonatomic, readwrite) NSString *_Nullable camera;
+@property (strong, nonatomic, readwrite) NSString *_Nullable rover;
+@property (strong, nonatomic, readwrite) NSURL *_Nonnull imageURL;
+@property (strong, nonatomic, readwrite) NSDate *_Nullable created;
 
 @end
 
@@ -45,20 +45,5 @@
   return self;
 }
 
--(NSURL *)imageURL {
-  return self.imageURL;
-}
-
--(NSDate *)createdDate {
-  return self.created;
-}
-
--(NSString *)roverName {
-  return self.rover;
-}
-
--(NSString *)cameraName {
-  return self.camera;
-}
 
 @end
