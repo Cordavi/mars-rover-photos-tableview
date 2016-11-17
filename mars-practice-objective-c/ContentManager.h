@@ -6,7 +6,8 @@
 @protocol ContentManagerDelegate <NSObject>
 
 @required
--(void)photoJsonDidLoad:(ContentManager *)contentManagerDelegate;
+-(void)photoJsonDidLoad:(ContentManager *)sender;
+-(void)imageDidLoadWithIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
