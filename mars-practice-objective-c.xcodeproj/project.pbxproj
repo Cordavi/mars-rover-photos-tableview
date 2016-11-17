@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D038F251DDE2C9B004B8DAA /* NasaPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D038F231DDE2C9B004B8DAA /* NasaPhotoTableViewCell.m */; };
+		1D038F261DDE2C9B004B8DAA /* NasaPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D038F241DDE2C9B004B8DAA /* NasaPhotoTableViewCell.xib */; };
 		1D08892D1DDCC2B400B1A5FB /* NasaPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08892C1DDCC2B400B1A5FB /* NasaPhoto.m */; };
 		1D0889301DDCEABD00B1A5FB /* NasaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08892F1DDCEABD00B1A5FB /* NasaTableViewController.m */; };
 		1D9C11421DDBA07300D40193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C11411DDBA07300D40193 /* main.m */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D038F221DDE2C9B004B8DAA /* NasaPhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NasaPhotoTableViewCell.h; sourceTree = "<group>"; };
+		1D038F231DDE2C9B004B8DAA /* NasaPhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NasaPhotoTableViewCell.m; sourceTree = "<group>"; };
+		1D038F241DDE2C9B004B8DAA /* NasaPhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NasaPhotoTableViewCell.xib; sourceTree = "<group>"; };
 		1D08892B1DDCC2B400B1A5FB /* NasaPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NasaPhoto.h; sourceTree = "<group>"; };
 		1D08892C1DDCC2B400B1A5FB /* NasaPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NasaPhoto.m; sourceTree = "<group>"; };
 		1D08892E1DDCEABD00B1A5FB /* NasaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NasaTableViewController.h; sourceTree = "<group>"; };
@@ -130,6 +135,9 @@
 				1DCD34441DDCBCA50043D0F7 /* ContentManager.m */,
 				1D08892E1DDCEABD00B1A5FB /* NasaTableViewController.h */,
 				1D08892F1DDCEABD00B1A5FB /* NasaTableViewController.m */,
+				1D038F221DDE2C9B004B8DAA /* NasaPhotoTableViewCell.h */,
+				1D038F231DDE2C9B004B8DAA /* NasaPhotoTableViewCell.m */,
+				1D038F241DDE2C9B004B8DAA /* NasaPhotoTableViewCell.xib */,
 				1D9C11491DDBA07300D40193 /* Main.storyboard */,
 				1D9C114C1DDBA07300D40193 /* Assets.xcassets */,
 				1D9C114E1DDBA07300D40193 /* LaunchScreen.storyboard */,
@@ -274,6 +282,7 @@
 				1D9C11501DDBA07300D40193 /* LaunchScreen.storyboard in Resources */,
 				1D9C114D1DDBA07300D40193 /* Assets.xcassets in Resources */,
 				1D9C114B1DDBA07300D40193 /* Main.storyboard in Resources */,
+				1D038F261DDE2C9B004B8DAA /* NasaPhotoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +309,7 @@
 			files = (
 				1D9C11481DDBA07300D40193 /* ViewController.m in Sources */,
 				1D9C117B1DDBAA6600D40193 /* NasaAPIClient.m in Sources */,
+				1D038F251DDE2C9B004B8DAA /* NasaPhotoTableViewCell.m in Sources */,
 				1D9C11781DDBA22000D40193 /* Keys.m in Sources */,
 				1DCD34451DDCBCA50043D0F7 /* ContentManager.m in Sources */,
 				1D9C11451DDBA07300D40193 /* AppDelegate.m in Sources */,
