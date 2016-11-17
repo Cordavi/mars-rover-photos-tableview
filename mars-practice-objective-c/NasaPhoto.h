@@ -3,10 +3,11 @@
 
 @interface NasaPhoto : NSObject
 
--(NSURL *)imageURL;
--(NSDate *)createdDate;
--(NSString *)roverName;
--(NSString *)cameraName;
+@property (strong, nonatomic, readonly) NSString *_Nullable camera;
+@property (strong, nonatomic, readonly) NSString *_Nullable rover;
+@property (strong, nonatomic, readonly) NSURL *_Nonnull imageURL;
+@property (strong, nonatomic, readonly) NSDate *_Nullable created;
+
 -(instancetype)initWithPhotoJson:(NSDictionary *)photosJson;
 
 @end
