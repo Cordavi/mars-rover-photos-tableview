@@ -36,14 +36,21 @@
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NasaTableViewCell" forIndexPath:indexPath];
   
   NasaPhoto *nasaData = self.contentManager.photosJsonArray[indexPath.row];
-  cell.textLabel.text = [nasaData cameraName];
-  cell.detailTextLabel.text = [nasaData roverName];
+  if (nasaData) {
+    cell.textLabel.text = nasaData.camera;
+    cell.detailTextLabel.text = nasaData.rover;
+    cell.imageView.image = [self.contentManager imageForIndexPath:indexPath];
+  }
   
   return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  [self.contentManager cancelNSURLSessionDataTaskForIndexPath:indexPath];
+}
+
 - (void)photoJsonDidLoad:(ContentManager *)contentManagerDelegate {
-  [[self tableView] reloadData];
+  [self.tableView reloadData];
 }
 
 @end
