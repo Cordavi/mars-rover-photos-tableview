@@ -1,6 +1,7 @@
 #import "NasaTableViewController.h"
 #import "ContentManager.h"
 #import "NasaPhoto.h"
+#import "NasaPhotoTableViewCell.h"
 
 @interface NasaTableViewController () <ContentManagerDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -14,6 +15,7 @@
   [super viewDidLoad];
   self.contentManager = [[ContentManager alloc] init];
   self.contentManager.delegate = self;
+  [self.tableView registerNib:[UINib nibWithNibName:@"NasaPhotoTableViewCell" bundle:nil] forCellReuseIdentifier:@"NasaTableViewCell"];
   [self.contentManager fetchPhotosJson];
 }
 
@@ -33,15 +35,14 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NasaTableViewCell" forIndexPath:indexPath];
+  NasaPhotoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NasaTableViewCell" forIndexPath:indexPath];
   
   NasaPhoto *nasaData = self.contentManager.photosJsonArray[indexPath.row];
   if (nasaData) {
-    cell.textLabel.text = nasaData.camera;
-    cell.detailTextLabel.text = nasaData.rover;
-    cell.imageView.image = [self.contentManager imageForIndexPath:indexPath];
+    cell.camera.text = nasaData.camera;
+    cell.rover.text = nasaData.rover;
+    cell.image.image = [self.contentManager imageForIndexPath:indexPath];
   }
-  
   return cell;
 }
 
@@ -49,8 +50,14 @@
   [self.contentManager cancelNSURLSessionDataTaskForIndexPath:indexPath];
 }
 
-- (void)photoJsonDidLoad:(ContentManager *)contentManagerDelegate {
+- (void)photoJsonDidLoad:(ContentManager *)sender {
   [self.tableView reloadData];
+}
+
+-(void)imageDidLoadWithIndexPath:(NSIndexPath *)indexPath {
+  if ([self.tableView.indexPathsForVisibleRows containsObject:indexPath]) {
+    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+  }
 }
 
 @end
